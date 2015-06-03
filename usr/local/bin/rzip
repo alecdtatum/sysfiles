@@ -1,0 +1,4 @@
+#!/bin/bash
+# Script to remove all .zip files in a directory
+
+rm *.zip

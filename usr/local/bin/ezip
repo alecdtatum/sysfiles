@@ -1,0 +1,6 @@
+#!/bin/bash
+# Script to extract the contents of all .zip files in a directory into respective folders named for the .zip files in the same directory
+
+for zip in *.zip; do
+	7z x "$zip" -r -o*
+done

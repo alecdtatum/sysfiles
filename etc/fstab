@@ -1,0 +1,17 @@
+# /dev/sda1
+UUID=3869-B715    /boot    vfat    rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro    0    1
+
+# /dev/mapper/cryptroot
+UUID=f3133223-7327-4aa6-ad56-a4b30d8a7030    /    btrfs    rw,noatime,compress=lzo,ssd,discard,space_cache    0    0
+
+# /dev/sdb1
+UUID=71a6da6a-9cd1-4e24-bc88-2886344c27ee    /mnt/files    btrfs    rw,noatime,compress-force=lzo,space_cache,autodefrag    0    0
+
+# /dev/sdc1
+UUID=e5e7218d-81d8-49f2-afb0-d38b2a315154    /mnt/games    btrfs    rw,noatime,compress-force=lzo,space_cache,autodefrag    0    0
+
+# /dev/sdc2
+UUID=9b016279-f338-43ea-be42-70de0c3c75ac    /mnt/music    btrfs    rw,noatime,compress-force=lzo,space_cache,autodefrag    0    0
+
+# /dev/sdc3
+UUID=4ac7105f-850f-40e6-8dc6-fe73367f2dfb    /mnt/video    btrfs    rw,noatime,compress-force=lzo,space_cache,autodefrag    0    0
