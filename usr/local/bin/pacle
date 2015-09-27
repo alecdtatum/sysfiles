@@ -1,4 +1,0 @@
-#!/bin/bash
-# Script to list all pacman packages that nothing depends on
-
-expac -HM "%-20n\t%10d" $( comm -23 <(pacman -Qqt|sort) <(pacman -Qqg base base-devel|sort) )

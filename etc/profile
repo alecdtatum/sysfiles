@@ -1,0 +1,37 @@
+# /etc/profile
+
+# umask
+umask 022
+
+# default path
+PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/home/alec/.local/bin"
+export PATH
+
+# load profiles from /etc/profile.d
+if test -d /etc/profile.d/; then
+	for profile in /etc/profile.d/*.sh; do
+		test -r "$profile" && . "$profile"
+	done
+	unset profile
+fi
+
+# deprecated variables
+unset TERMCAP
+unset MANPATH
+
+# general program file locations
+export XDG_CONFIG_HOME="$HOME/.local/config"
+export XDG_CACHE_HOME="$HOME/.local/cache"
+
+# specific program file locations
+export GNUPGHOME="$XDG_CONFIG_HOME/gnupg"
+export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
+export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
+export WINEPREFIX="$XDG_DATA_HOME"/wine
+export WIRESHARK_DATA_DIR="$XDG_CONFIG_HOME"/wireshark
+export XAUTHORITY="$XDG_CACHE_HOME"/X11/Xauthority
+export XINITRC="$XDG_CONFIG_HOME"/X11/xinitrc
+export ZDOTDIR="$XDG_CONFIG_HOME/zsh/"
+
+# miscellaneous variables
+export EDITOR=vim

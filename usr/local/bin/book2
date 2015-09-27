@@ -1,4 +1,0 @@
-#!/bin/bash
-# Script to launch a book in llpp
-
-exec llpp "/mnt/files/books/Applied Science/The C Programming Language (2nd Edition).pdf"
