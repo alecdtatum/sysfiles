@@ -1,0 +1,17 @@
+Section "Monitor"
+	Identifier "DisplayPort-1"
+	Option "PreferredMode" "1920x1080"
+	Option "Position" "960 0"
+EndSection
+
+Section "Monitor"
+	Identifier "HDMI-0"
+	Option "PreferredMode" "1920x1080"
+	Option "Position" "0 1080"
+EndSection
+
+Section "Monitor"
+	Identifier "DVI-0"
+	Option "PreferredMode" "1920x1080"
+	Option "Position" "1920 1080"
+EndSection
